@@ -1,16 +1,18 @@
 <template>
   <div id="app">
+    <MainNav />
     <Home />
   </div>
 </template>
 
 <script>
 import Home from "./components/Home.vue";
-
+import MainNav from "./components/MainNav.vue";
 export default {
   name: "app",
   components: {
-    Home
+    Home,
+    MainNav
   }
 };
 </script>
@@ -32,10 +34,26 @@ body {
   padding: 0;
 }
 #app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Cabin Sketch", cursive;
   text-align: center;
   color: #abafb3;
+  display: grid;
+  grid-template-areas: "nav page";
+  grid-template-columns: 200px auto;
+  min-height: 100vh;
+}
+.home {
+  grid-area: page;
+}
+.main-nav {
+  grid-area: nav;
+}
+
+a {
+  color: #ffffff;
+  transition: all 200ms ease-in-out;
+}
+a:hover {
+  background: var(--color-intrative);
 }
 </style>

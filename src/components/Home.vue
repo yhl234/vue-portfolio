@@ -1,29 +1,7 @@
 <template>
-  <div>
-    <nav>
-      <Ul>
-        <li>
-          <a href="#">Home</a>
-        </li>
-        <li>
-          <a href="#">Works</a>
-        </li>
-        <li>
-          <a href="#">Resume</a>
-        </li>
-        <li>
-          <a href="#">Contact</a>
-        </li>
-      </Ul>
-    </nav>
-    <div class="home-grid">
-      <h1 class="test">Louis Lee</h1>
-      <div class="social-links">
-        <i class="fab fa-linkedin fa-2x"></i>
-        <i class="fab fa-github-square fa-2x"></i>
-        <i class="fas fa-envelope-square fa-2x"></i>
-      </div>
-    </div>
+  <div class="home">
+    <!-- Photo by Patrick Tomasso on Unsplash -->
+    <h1 class="test">Louis Lee</h1>
   </div>
 </template>
 <script>
@@ -32,29 +10,24 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-nav {
-  background: transparent;
+h1 {
+  font-family: "Fredericka the Great", cursive;
 }
-ul {
-  display: flex;
-  list-style: none;
-  justify-content: flex-end;
-}
-li {
-  padding: 1rem;
-}
-a {
-  color: #ffffff;
-}
-.home-grid {
+.home {
   display: grid;
+  position: relative;
 }
-
-.social-links {
-  display: flex;
-  justify-content: flex-start;
-  i {
-    margin: 0.5rem;
-  }
+.home::after {
+  content: "";
+  background-image: url("../assets/img/bg.jpg");
+  // Photo by Patrick Tomasso on Unsplash
+  background-size: cover;
+  opacity: 0.1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
 }
 </style>
