@@ -1,12 +1,19 @@
 <template>
   <div class="home">
     <!-- Photo by Patrick Tomasso on Unsplash -->
-    <h1 class="test">Louis Lee</h1>
+    <div class="center-center">
+      <h1>Louis Lee</h1>
+    </div>
+    <Works />
   </div>
 </template>
 <script>
+import Works from "./Works";
 export default {
-  name: "Home"
+  name: "Home",
+  components: {
+    Works
+  }
 };
 </script>
 <style lang="scss" scoped>
@@ -22,6 +29,8 @@ h1 {
   background-image: url("../assets/img/bg.jpg");
   // Photo by Patrick Tomasso on Unsplash
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   opacity: 0.1;
   top: 0;
   left: 0;

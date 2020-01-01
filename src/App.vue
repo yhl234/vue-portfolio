@@ -56,4 +56,9 @@ a {
 a:hover {
   background: var(--color-intrative);
 }
+.center-center {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
 </style>

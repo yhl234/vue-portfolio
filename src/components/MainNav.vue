@@ -52,6 +52,7 @@ nav {
       a {
         display: block;
         padding: 0.3rem;
+        text-decoration: none;
       }
     }
   }
@@ -59,8 +60,6 @@ nav {
 .social-links {
   display: flex;
   justify-content: space-evenly;
-  overflow: hidden;
-
   a:hover {
     background: transparent;
     color: var(--color-intrative);
