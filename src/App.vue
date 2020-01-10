@@ -36,6 +36,7 @@ export default {
 	--color-dark-one: #313131;
 	--color-dark-two: #414141;
 	--color-dark-three: #525252;
+	--color-text: #abafb3;
 }
 body {
 	background: var(--color-dark-one);
@@ -46,7 +47,7 @@ body {
 #app {
 	font-family: "Cabin Sketch", cursive;
 	text-align: center;
-	color: #abafb3;
+	color: var(--color-text);
 	display: grid;
 	grid-template-areas: "nav page";
 	grid-template-columns: 200px auto;

@@ -56,6 +56,7 @@ textarea {
 	border: 0;
 	padding: 0.5rem;
 	border-radius: 0.2rem;
+	background: var(--color-text);
 }
 label {
 	margin-bottom: 1rem;
