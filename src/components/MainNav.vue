@@ -3,16 +3,13 @@
     <nav>
       <Ul>
         <li>
-          <a href="#">Home</a>
+          <a href="#" data-menu="home" @click="emitMenu">Home</a>
         </li>
         <li>
-          <a href="#">Works</a>
+          <a href="#" data-menu="about" @click="emitMenu">About</a>
         </li>
         <li>
-          <a href="#">Resume</a>
-        </li>
-        <li>
-          <a href="#">Contact</a>
+          <a href="#" data-menu="contact" @click="emitMenu">Contact</a>
         </li>
       </Ul>
     </nav>
@@ -31,7 +28,12 @@
 </template>
 <script>
 export default {
-  name: "MainNav"
+  name: "MainNav",
+  methods: {
+    emitMenu(e) {
+      this.$emit("menuClicked", e.target.dataset.menu);
+    }
+  }
 };
 </script>
 <style lang="scss" scoped>
