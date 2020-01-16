@@ -32,7 +32,6 @@ h1 {
   display: grid;
   position: relative;
   grid-template-areas: "top" "bottom";
-  grid-template-rows: 300px auto;
 }
 .home::after {
   content: "";

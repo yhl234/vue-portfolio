@@ -1,6 +1,6 @@
 <template>
   <div class="main-nav">
-    <a href="https://louislee.best/">
+    <a class="logo" href="https://louislee.best/">
       <img src="@/assets/logo.png" width="150" height="150" />
     </a>
     <nav>
@@ -44,7 +44,11 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  // .logo {
+  //   background: var(--color-intrative);
+  // }
 }
+
 nav {
   ul {
     padding: 0;
@@ -63,6 +67,7 @@ nav {
   }
 }
 .social-links {
+  min-height: 4rem;
   display: flex;
   justify-content: space-evenly;
   a:hover {
