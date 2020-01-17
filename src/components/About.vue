@@ -23,9 +23,12 @@
       <li>
         <a href="https://github.com/yhl234/play-node-js-crawler">Telegram crawler bot</a>
       </li>
-      <li>Arduino</li>
     </ul>
     <h2>Next Step</h2>
+    <ul>
+      <li>Less Css</li>
+      <li>Arduino</li>
+    </ul>
   </div>
 </template>
 <script>
@@ -35,7 +38,7 @@ export default {
 </script>
 <style scoped lang="scss">
 .bottom {
-  margin: 0 10rem;
+  margin: 0 auto;
 }
 ul {
   // margin: 0 10rem;
