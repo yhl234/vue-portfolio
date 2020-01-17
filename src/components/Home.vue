@@ -10,17 +10,22 @@
     <template v-if="this.menu === 'contact'">
       <Contact />
     </template>
+    <template v-if="this.menu === 'about'">
+      <About />
+    </template>
   </div>
 </template>
 <script>
 import Works from "./Works";
 import Contact from "./Contact";
+import About from "./About";
 export default {
   name: "Home",
   props: ["menu"],
   components: {
     Works,
-    Contact
+    Contact,
+    About
   }
 };
 </script>
