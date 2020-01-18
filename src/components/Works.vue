@@ -1,5 +1,14 @@
 <template>
-  <div class="works bottom" v-cloak>
+  <div
+    class="works bottom"
+    :class="{grabbing:isDown}"
+    ref="cards"
+    @mousedown.prevent="mousedown"
+    @mouseup="mouseup"
+    @mouseleave="mouseleave"
+    @mousemove="mousemove"
+    v-cloak
+  >
     <div class="card" v-for="(i, index) in works" :key="index">
       <div class="imgContainer">
         <img :src="i.img" loading="lazy" />
@@ -61,16 +70,43 @@ export default {
   name: "Works",
   data: function() {
     return {
-      works
+      works,
+      isDown: false,
+      start: 0
     };
   },
-  methods: {}
+  methods: {
+    mousedown(e) {
+      this.isDown = true;
+      this.start = e.pageX;
+    },
+    mouseup() {
+      this.isDown = false;
+    },
+    mouseleave() {
+      this.isDown = false;
+    },
+    mousemove(e) {
+      if (this.isDown === false) {
+        return;
+      }
+      const walk = this.start - e.pageX;
+      const cards = this.$refs.cards;
+      cards.scrollLeft += walk;
+      console.log(cards.scrollLeft);
+    }
+  }
 };
 </script>
 <style lang="scss" scoped>
 .works {
-  display: flex;
   overflow-x: scroll;
+  width: 100%;
+  display: flex;
+  cursor: grab;
+}
+.grabbing {
+  cursor: grabbing;
 }
 .card {
   overflow: hidden;

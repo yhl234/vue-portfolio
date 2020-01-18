@@ -6,13 +6,13 @@
     <nav>
       <Ul>
         <li>
-          <a href="#" data-menu="home" @click="emitMenu">Home</a>
+          <a href="#" data-menu="home" @click.prevent="emitMenu">Home</a>
         </li>
         <li>
-          <a href="#" data-menu="about" @click="emitMenu">About</a>
+          <a href="#" data-menu="about" @click.prevent="emitMenu">About</a>
         </li>
         <li>
-          <a href="#" data-menu="contact" @click="emitMenu">Contact</a>
+          <a href="#" data-menu="contact" @click.prevent="emitMenu">Contact</a>
         </li>
       </Ul>
     </nav>
