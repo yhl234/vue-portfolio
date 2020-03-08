@@ -30,40 +30,74 @@
 <script>
 const works = [
   {
-    img: "https://picsum.photos/300/200?random=1.jpg",
-    name: "test",
-    category: "test",
+    img: "/images/projects/ES6-Twitter-Clone.png",
+    name: "ES6 Twitter Clone<",
+    category: "JavaScript",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    code: "www.github.com",
-    url: "www.google.com"
+      "Twitter clone made by ES6 Javascript, Giphy api, emoji api and Mockaroo.",
+    code: "https://github.com/yhl234/ES6-Twitter-Clone",
+    url: "https://19f-adv-client-side-javascript.yhl234.now.sh/"
   },
   {
-    img: "https://picsum.photos/300/200?random=2.jpg",
-    name: "test2",
-    category: "test2",
+    img: "/images/projects/vue-cli-trivia.png",
+    name: "Vue.js Trivia",
+    category: "Vue.Js",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    url: "www.google.com",
-    code: "www.github.com"
+      "Vue.js based trivia game using Trivia API, chart.js and chart.js",
+    code: "https://github.com/yhl234/vue-cli-trivia",
+    url: "https://vue-cli-trivia.now.sh/"
   },
   {
-    img: "https://picsum.photos/300/200?random=3.jpg",
-    name: "test3",
-    category: "test",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    url: "www.google.com",
-    code: "www.github.com"
+    img: "/images/projects/layout-with-flexbox-and-grid.png",
+    name: "Responsive Layout",
+    category: "CSS",
+    description: "Recreate a Bootstrap template without using Bootstrap",
+    code: "https://github.com/yhl234/layout-with-flexbox-and-grid",
+    url: "https://layout-with-flexbox-and-grid.now.sh/"
   },
   {
-    img: "https://picsum.photos/300/200?random=4.jpg",
-    name: "test4",
-    category: "test4",
+    img: "/images/projects/refactoring-an-Infographic.png",
+    name: "Responsive Layout",
+    category: "CSS",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    url: "www.google.com",
-    code: "www.github.com"
+      "Convert a brochure in PDF into a fully responsive Web page or interface using only text and vector-based",
+    code: "https://github.com/yhl234/Refactoring-an-Infographic",
+    url: "https://refactoring-an-infographic.now.sh/"
+  },
+  {
+    img: "/images/projects/lazy-tulip-ui-redesign.png",
+    name: "Lazy Tulip UI Redesign",
+    category: "Teamwork",
+    description:
+      "A modern redesign of a local cafe's website using HTML, CSS and JavaScript",
+    code: "https://github.com/aryafilsoofi/Lazy-Tulip-UI-Redesign",
+    url: "https://lazy-tulip-ui-redesign.now.sh/"
+  },
+  {
+    img: "/images/projects/express-portfolio.png",
+    name: "Express Portfolio",
+    category: "Express.js",
+    description: "A Express portfolio made by express, hbs, less and Heroku",
+    code: "https://github.com/yhl234/express-portfolio",
+    url: "https://yhl234-express-portfolio.herokuapp.com/"
+  },
+  {
+    img: "/images/projects/.png",
+    name: "ONNI",
+    category: "Teamwork & ASP.NET core 2.2",
+    description:
+      "A KickStarter-like Social innovation platform for a client from Georgian ",
+    code: "https://github.com/Ryan-Gee/onni",
+    url: "http://onnidev.azurewebsites.net/"
+  },
+  {
+    img: "/images/projects/.png",
+    name: "Mountain Shop",
+    category: "WordPress",
+    description:
+      "Fully custom WordPress e-commerce site using Underscore, WooCommerce, and custom post type.",
+    code: "https://github.com/yhl234/mountain-shop-wordpress-theme",
+    url: "https://yhl234.xyz/"
   }
 ];
 export default {
@@ -137,6 +171,8 @@ export default {
   overflow: hidden;
   img {
     transition: all 3s ease-in-out;
+    height: 200px;
+    width: auto;
     &:hover {
       scale: 1.2;
     }
