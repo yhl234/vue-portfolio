@@ -36,7 +36,7 @@ export default {
   name: "about"
 };
 </script>
-<style scoped lang="scss">
+<style scoped lang="less">
 .bottom {
   margin: 0 auto;
 }

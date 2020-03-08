@@ -41,12 +41,15 @@ export default {
 </script>
 <style lang="scss" scoped>
 .main-nav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  // .logo {
-  //   background: var(--color-intrative);
-  // }
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
 }
 
 nav {

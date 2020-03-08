@@ -73,7 +73,7 @@ export default {
   }
 };
 </script>
-<style lang="scss" scoped>
+<style lang="less" scoped>
 .required {
   color: var(--color-intrative);
   margin-bottom: 0.5rem;

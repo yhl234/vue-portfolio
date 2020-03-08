@@ -3,6 +3,7 @@
     <!-- Photo by Patrick Tomasso on Unsplash -->
     <div class="top center-center">
       <h1>Louis Lee</h1>
+      <span>I develop great web app</span>
     </div>
     <template v-if="this.menu === 'home'">
       <Works />
@@ -29,7 +30,7 @@ export default {
   }
 };
 </script>
-<style lang="scss" scoped>
+<style lang="less" scoped>
 h1 {
   font-family: "Fredericka the Great", cursive;
 }
@@ -37,6 +38,7 @@ h1 {
   display: grid;
   position: relative;
   grid-template-areas: "top" "bottom";
+  grid-template-rows: 200px auto;
   width: 100%;
 }
 .home::after {
@@ -44,6 +46,7 @@ h1 {
   background-image: url("../assets/img/bg.jpg");
   // Photo by Patrick Tomasso on Unsplash
   background-size: cover;
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   opacity: 0.1;

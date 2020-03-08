@@ -1,14 +1,5 @@
 <template>
-  <div
-    class="works bottom"
-    :class="{grabbing:isDown}"
-    ref="cards"
-    @mousedown.prevent="mousedown"
-    @mouseup="mouseup"
-    @mouseleave="mouseleave"
-    @mousemove="mousemove"
-    v-cloak
-  >
+  <div class="works bottom" :class="{grabbing:isDown}" ref="cards" v-cloak>
     <div class="card" v-for="(i, index) in works" :key="index">
       <div class="imgContainer">
         <img :src="i.img" loading="lazy" />
@@ -110,63 +101,71 @@ export default {
     };
   },
   methods: {
-    mousedown(e) {
-      this.isDown = true;
-      this.start = e.pageX;
-    },
-    mouseup() {
-      this.isDown = false;
-    },
-    mouseleave() {
-      this.isDown = false;
-    },
-    mousemove(e) {
-      if (this.isDown === false) {
-        return;
-      }
-      const walk = this.start - e.pageX;
-      const cards = this.$refs.cards;
-      cards.scrollLeft += walk;
-      console.log(cards.scrollLeft);
-    }
+    // @mousedown.prevent="mousedown"
+    // @mouseup="mouseup"
+    // @mouseleave="mouseleave"
+    // @mousemove="mousemove"
+    // mousedown(e) {
+    //   this.isDown = true;
+    //   this.start = e.pageX;
+    // },
+    // mouseup() {
+    //   this.isDown = false;
+    // },
+    // mouseleave() {
+    //   this.isDown = false;
+    // },
+    // mousemove(e) {
+    //   if (this.isDown === false) {
+    //     return;
+    //   }
+    //   const walk = this.start - e.pageX;
+    //   const cards = this.$refs.cards;
+    //   cards.scrollLeft += walk;
+    //   console.log(cards.scrollLeft);
+    // }
   }
 };
 </script>
-<style lang="scss" scoped>
+<style lang="less" scoped>
 .works {
-  overflow-x: scroll;
+  // overflow-x: scroll;
+  flex-wrap: wrap;
   width: 100%;
   display: flex;
-  cursor: grab;
+  justify-content: center;
+  // cursor: grab;
 }
-.grabbing {
-  cursor: grabbing;
-}
+// .grabbing {
+//   cursor: grabbing;
+// }
 .card {
   overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   border: 1px solid rgba(255, 255, 255, 0.664);
-  margin: 2rem;
-  min-width: 300px;
-  max-width: 300px;
+  border-radius: 0.5rem;
+  margin: 1.3rem;
+  min-width: 250px;
+  max-width: 280px;
   height: 400px;
   p {
     margin-top: 0;
   }
   .card-btns {
     display: flex;
+    border-radius: 0 0 0.5rem 0.5rem;
     a {
       flex: 1 0;
       padding: 0.5rem;
-      border: 0.5px solid #fff;
+      border: 0.2px solid #fff;
       border-collapse: collapse;
     }
   }
 }
 .imgContainer {
-  width: 300px;
+  width: 100%;
   height: 200px;
   overflow: hidden;
   img {
