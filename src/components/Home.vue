@@ -3,7 +3,7 @@
     <!-- Photo by Patrick Tomasso on Unsplash -->
     <div class="top center-center">
       <h1>Louis Lee</h1>
-      <span>I develop great web app</span>
+      <!-- <span>I develop great web app</span> -->
     </div>
     <template v-if="this.menu === 'home'">
       <Works />
