@@ -53,8 +53,6 @@ export default {
   @media @mobile {
     // height: 100px;
     width: 100%;
-    top: auto;
-    left: auto;
     position: relative;
     .row();
     flex-wrap: wrap;

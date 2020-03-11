@@ -56,8 +56,8 @@ body {
     grid-template-areas:
       "nav"
       "page";
-
     grid-template-columns: auto;
+    grid-template-rows: 100px auto;
   }
 }
 .home {

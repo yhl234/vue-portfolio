@@ -37,7 +37,7 @@ export default {
   grid-template-areas: "top" "bottom";
   grid-template-rows: 200px auto;
   @media @mobile {
-    grid-template-rows: auto;
+    grid-template-rows: 100px auto;
   }
   width: 100%;
   &::after {
