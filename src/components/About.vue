@@ -37,8 +37,13 @@ export default {
 };
 </script>
 <style scoped lang="less">
-.bottom {
-  margin: 0 auto;
+.home {
+  .bottom {
+    margin: 0 auto;
+    @media @mobile {
+      padding: 0 1rem;
+    }
+  }
 }
 ul {
   // margin: 0 10rem;

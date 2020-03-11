@@ -39,7 +39,7 @@ export default {
   }
 };
 </script>
-<style lang="scss" scoped>
+<style lang="less" scoped>
 .main-nav {
   height: 100%;
   width: 200px;
@@ -50,15 +50,39 @@ export default {
   top: 0;
   left: 0;
   overflow-x: hidden;
+  @media @mobile {
+    // height: 100px;
+    width: 100%;
+    top: auto;
+    left: auto;
+    position: relative;
+    .row();
+    flex-wrap: wrap;
+    a {
+      display: block;
+      img {
+        height: 80px;
+        width: 80px;
+      }
+    }
+  }
 }
 
 nav {
+  @media @mobile {
+    .f-center-center();
+  }
   ul {
     padding: 0;
-    display: flex;
-    flex-direction: column;
+    .col();
     list-style: none;
     justify-content: flex-end;
+
+    @media @mobile {
+      .row();
+      .f-center-center();
+      height: 20px;
+    }
     li {
       padding: 1rem 0;
       a {
@@ -73,6 +97,13 @@ nav {
   min-height: 4rem;
   display: flex;
   justify-content: space-evenly;
+  @media @mobile {
+    min-height: 3rem;
+    .f-center-center();
+    // a {
+    //   margin: 0 0.5rem;
+    // }
+  }
   a:hover {
     background: transparent;
     color: var(--color-intrative);

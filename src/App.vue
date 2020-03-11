@@ -27,7 +27,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="less">
 * {
   box-sizing: border-box;
 }
@@ -52,6 +52,13 @@ body {
   grid-template-areas: "nav page";
   grid-template-columns: 200px auto;
   min-height: 100vh;
+  @media @mobile {
+    grid-template-areas:
+      "nav"
+      "page";
+
+    grid-template-columns: auto;
+  }
 }
 .home {
   grid-area: page;

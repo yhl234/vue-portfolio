@@ -88,6 +88,9 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  @media @mobile {
+    width: 100%;
+  }
 }
 input:not(#google),
 textarea {

@@ -36,6 +36,9 @@ export default {
   position: relative;
   grid-template-areas: "top" "bottom";
   grid-template-rows: 200px auto;
+  @media @mobile {
+    grid-template-rows: auto;
+  }
   width: 100%;
   &::after {
     content: "";
@@ -55,10 +58,13 @@ export default {
   }
   .top {
     font-family: "Fredericka the Great", cursive;
-
     grid-area: top;
     display: grid;
     grid-template-rows: 140px 50px;
+    @media @mobile {
+      grid-template-rows: auto;
+      padding: 2rem;
+    }
     justify-content: center;
     align-items: center;
     h1 {
@@ -69,6 +75,9 @@ export default {
   .bottom {
     grid-area: bottom;
     padding: 0 3rem;
+    @media @mobile {
+      padding: 1rem;
+    }
     transition: all 5000s ease-in-out;
   }
 }
