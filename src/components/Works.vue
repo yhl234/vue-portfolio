@@ -73,7 +73,7 @@ const works = [
     url: "https://yhl234-express-portfolio.herokuapp.com/"
   },
   {
-    img: "/images/projects/.png",
+    img: "/images/projects/developing.png",
     name: "ONNI",
     category: "Teamwork & ASP.NET core 2.2",
     description:
@@ -82,13 +82,21 @@ const works = [
     url: "http://onnidev.azurewebsites.net/"
   },
   {
-    img: "/images/projects/.png",
+    img: "/images/projects/mountain-shop.png",
     name: "Mountain Shop",
     category: "WordPress",
     description:
-      "Fully custom WordPress e-commerce site using Underscore, WooCommerce, and custom post type.",
+      "Fully custom WordPress theme using Underscore and custom post type.",
     code: "https://github.com/yhl234/mountain-shop-wordpress-theme",
     url: "https://yhl234.xyz/"
+  },
+  {
+    img: "/images/projects/checkout-form.png",
+    name: "Checkout Form",
+    category: "CSS",
+    description: "A simple animated checkout from",
+    code: "https://github.com/yhl234/checkout-form-animation",
+    url: "https://checkout-form-animation.now.sh/"
   }
 ];
 export default {
