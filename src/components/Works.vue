@@ -82,15 +82,6 @@ const works = [
     url: "http://onnidev.azurewebsites.net/"
   },
   {
-    img: "/images/projects/mountain-shop.png",
-    name: "Mountain Shop",
-    category: "WordPress",
-    description:
-      "Fully custom WordPress theme using Underscore and custom post type.",
-    code: "https://github.com/yhl234/mountain-shop-wordpress-theme",
-    url: "https://yhl234.xyz/"
-  },
-  {
     img: "/images/projects/checkout-form.png",
     name: "Checkout Form",
     category: "CSS",
@@ -108,31 +99,7 @@ export default {
       start: 0
     };
   },
-  methods: {
-    // @mousedown.prevent="mousedown"
-    // @mouseup="mouseup"
-    // @mouseleave="mouseleave"
-    // @mousemove="mousemove"
-    // mousedown(e) {
-    //   this.isDown = true;
-    //   this.start = e.pageX;
-    // },
-    // mouseup() {
-    //   this.isDown = false;
-    // },
-    // mouseleave() {
-    //   this.isDown = false;
-    // },
-    // mousemove(e) {
-    //   if (this.isDown === false) {
-    //     return;
-    //   }
-    //   const walk = this.start - e.pageX;
-    //   const cards = this.$refs.cards;
-    //   cards.scrollLeft += walk;
-    //   console.log(cards.scrollLeft);
-    // }
-  }
+  methods: {}
 };
 </script>
 <style lang="less" scoped>
