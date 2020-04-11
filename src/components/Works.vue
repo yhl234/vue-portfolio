@@ -21,8 +21,16 @@
 <script>
 const works = [
   {
+    img: "/images/projects/pause-collection.png",
+    name: "Pause Collection",
+    category: "WordPress",
+    description: "Pause Collection is a custom WordPress WooCommercer theme",
+    code: "https://github.com/yhl234/Pause-Collection",
+    url: "https://yhl234.xyz/"
+  },
+  {
     img: "/images/projects/ES6-Twitter-Clone.png",
-    name: "ES6 Twitter Clone<",
+    name: "ES6 Twitter Clone",
     category: "JavaScript",
     description:
       "Twitter clone made by ES6 Javascript, Giphy api, emoji api and Mockaroo.",
@@ -75,7 +83,7 @@ const works = [
   {
     img: "/images/projects/developing.png",
     name: "ONNI",
-    category: "Teamwork & ASP.NET core 2.2",
+    category: "Teamwork & ASP.NET core 2.1",
     description:
       "A KickStarter-like Social innovation platform for a client from Georgian ",
     code: "https://github.com/Ryan-Gee/onni",
