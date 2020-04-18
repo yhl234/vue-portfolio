@@ -155,7 +155,7 @@ export default {
   overflow: hidden;
   img {
     transition: all 3s ease-in-out;
-    height: 200px;
+    height: 210px;
     width: auto;
     &:hover {
       scale: 1.2;
