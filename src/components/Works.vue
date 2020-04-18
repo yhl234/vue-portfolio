@@ -29,6 +29,15 @@ const works = [
     url: "https://yhl234.xyz/"
   },
   {
+    img: "/images/projects/onni.png",
+    name: "ONNI",
+    category: "Teamwork & ASP.NET core 2.1",
+    description:
+      "A KickStarter-like Social innovation platform for a client from Georgian ",
+    code: "https://github.com/Ryan-Gee/onni",
+    url: "http://onnidev.azurewebsites.net/"
+  },
+  {
     img: "/images/projects/ES6-Twitter-Clone.png",
     name: "ES6 Twitter Clone",
     category: "JavaScript",
@@ -80,15 +89,7 @@ const works = [
     code: "https://github.com/yhl234/express-portfolio",
     url: "https://yhl234-express-portfolio.herokuapp.com/"
   },
-  {
-    img: "/images/projects/developing.png",
-    name: "ONNI",
-    category: "Teamwork & ASP.NET core 2.1",
-    description:
-      "A KickStarter-like Social innovation platform for a client from Georgian ",
-    code: "https://github.com/Ryan-Gee/onni",
-    url: "http://onnidev.azurewebsites.net/"
-  },
+
   {
     img: "/images/projects/checkout-form.png",
     name: "Checkout Form",
