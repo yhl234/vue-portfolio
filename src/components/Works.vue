@@ -37,24 +37,7 @@ const works = [
     code: "https://github.com/Ryan-Gee/onni",
     url: "http://onnidev.azurewebsites.net/"
   },
-  {
-    img: "/images/projects/ES6-Twitter-Clone.png",
-    name: "ES6 Twitter Clone",
-    category: "JavaScript",
-    description:
-      "Twitter clone made by ES6 Javascript, Giphy api, emoji api and Mockaroo.",
-    code: "https://github.com/yhl234/ES6-Twitter-Clone",
-    url: "https://19f-adv-client-side-javascript.yhl234.now.sh/"
-  },
-  {
-    img: "/images/projects/vue-cli-trivia.png",
-    name: "Vue.js Trivia",
-    category: "Vue.Js",
-    description:
-      "Vue.js based trivia game using Trivia API, chart.js and chart.js",
-    code: "https://github.com/yhl234/vue-cli-trivia",
-    url: "https://vue-cli-trivia.now.sh/"
-  },
+
   {
     img: "/images/projects/layout-with-flexbox-and-grid.png",
     name: "Responsive Layout",
@@ -80,6 +63,24 @@ const works = [
       "A modern redesign of a local cafe's website using HTML, CSS and JavaScript",
     code: "https://github.com/aryafilsoofi/Lazy-Tulip-UI-Redesign",
     url: "https://lazy-tulip-ui-redesign.now.sh/"
+  },
+  {
+    img: "/images/projects/ES6-Twitter-Clone.png",
+    name: "ES6 Twitter Clone",
+    category: "JavaScript",
+    description:
+      "Twitter clone made by ES6 Javascript, Giphy api, emoji api and Mockaroo.",
+    code: "https://github.com/yhl234/ES6-Twitter-Clone",
+    url: "https://19f-adv-client-side-javascript.yhl234.now.sh/"
+  },
+  {
+    img: "/images/projects/vue-cli-trivia.png",
+    name: "Vue.js Trivia",
+    category: "Vue.Js",
+    description:
+      "Vue.js based trivia game using Trivia API, chart.js and chart.js",
+    code: "https://github.com/yhl234/vue-cli-trivia",
+    url: "https://vue-cli-trivia.now.sh/"
   },
   {
     img: "/images/projects/express-portfolio.png",
@@ -150,7 +151,7 @@ export default {
 }
 .imgContainer {
   width: 100%;
-  height: 200px;
+  height: 210px;
   overflow: hidden;
   img {
     transition: all 3s ease-in-out;
